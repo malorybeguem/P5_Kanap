@@ -2,6 +2,6 @@
 
 fillSection();
 async function getArticles() {
-    var articlesCatch = await fetch("http://localhost:3000/api/products")
-    return await articlesCatch.json();
+    var retrieveItems = await fetch("http://localhost:3000/api/products")
+    return await retrieveItems.json();
 }
