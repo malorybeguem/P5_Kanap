@@ -116,7 +116,7 @@ function getTotals(){
 getTotals();
 
 // Quantity Modif //
-function modifyQuantity() {
+function modifyQtty() {
     let quantitytModif = document.querySelectorAll(".itemQuantity");
 
     for (let k = 0; k < quantitytModif.length; k++){
@@ -139,7 +139,7 @@ function modifyQuantity() {
         })
     }
 }
-modifyQuantity();
+modifyQtty();
 
 // DELETE PRODUCTS FROM THE CART //
 function deleteProduct() {
