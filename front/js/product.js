@@ -31,14 +31,14 @@ fetch("http://localhost:3000/api/products/" + productId)
     })
 // Add of products and informations in localstorage//
 // Selecton of datas sent to local storage//
+
 const btnAdd = document.querySelector("#addToCart")
 const color = document.querySelector("#colors")
 const quantity = document.querySelector("#quantity")
 
 // When clicking btnAdd, add object productOptions to localstorage with a function //
+
 btnAdd.addEventListener('click', e => {
-
-
     if (color.value === "") {
         alert("Choisissez d'abord une couleur")
     } else if (quantity.value > 0 && quantity.value < 100) {
@@ -46,8 +46,6 @@ btnAdd.addEventListener('click', e => {
             id: productId,
             color: color.value,
             quantity: quantity.value,
-
-
         }
         // Recover file from localStorage //
         addToCart(productOptions)
