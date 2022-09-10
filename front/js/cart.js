@@ -283,7 +283,7 @@ function removeItems() {
   }
 }
 
-// Formulaire
+// Form //
 
 function getUserForm() {
   let inputs = document.querySelectorAll("input");

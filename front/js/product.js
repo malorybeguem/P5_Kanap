@@ -86,7 +86,7 @@ function addToCart() {
           "userProducts",
           JSON.stringify(productLocalStorage)
         );
-        alert("C'est cool, le produit est enregistré");
+        alert("Les articles ont bien étés ajoutés au panier");
       } else {
         // Comportement si il existe des données dans le localStorage
 
@@ -110,14 +110,14 @@ function addToCart() {
             "userProducts",
             JSON.stringify(productLocalStorage)
           );
-          alert("C'est cool, le produit est enregistré");
+          alert("Les articles ont bien étés ajoutés au panier ");
         } else {
           productLocalStorage.push(userProductArray);
           localStorage.setItem(
             "userProducts",
             JSON.stringify(productLocalStorage)
           );
-          alert("C'est cool, le produit est enregistré");
+          alert("Les articles ont bien étés ajoutés au panier");
         }
       }
 
