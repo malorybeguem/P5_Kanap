@@ -123,7 +123,7 @@ function addToCart() {
 
     } else {
       alert(
-        "Veuillez renseigner la couleur et la quantité du produit sélectionné"
+        "La quantité d'un même produit ne peux pas excéder 100, veuillez rectifier votre saisie"
       );
     }
   });
