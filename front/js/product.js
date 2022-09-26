@@ -77,7 +77,7 @@ function addToCart() {
         localStorage.getItem("userProducts")
       );
 
-      // IF don't have local storage (NULL No value or type define)
+      // IF don't have local storage (NULL No value or type define) //
 
       if (productLocalStorage == null) {
         productLocalStorage = [];
