@@ -71,13 +71,13 @@ function addToCart() {
         userProductQty: userProductQty,
       };
 
-      // Mise à disposition du localStorage si existant 
+      // Provision of local storage if existing // 
 
       let productLocalStorage = JSON.parse(
         localStorage.getItem("userProducts")
       );
 
-      // Comportement si il n'y a pas de localStorage (il n'a ni valeur ni type défini : donc null)
+      // IF don't have local storage (NULL No value or type define)
 
       if (productLocalStorage == null) {
         productLocalStorage = [];
@@ -88,9 +88,8 @@ function addToCart() {
         );
         alert("Les articles ont bien étés ajoutés au panier");
       } else {
-        // Comportement si il existe des données dans le localStorage
 
-        // Condition si le produit comporte le même Id et la même couleur. Méthode find dans le localStorage et comparaison avec les valeurs de l'objet userProductArray
+        // Condition IF contain same color same ID . "find" method in localStorage, comparison between values of objetcs -> userProductArray
 
         let mappingProducts = productLocalStorage.find(
           (el) =>
@@ -98,7 +97,7 @@ function addToCart() {
             el.userProductColor === userProductColor
         );
 
-        // Si la condition est vraie on additionne la quantité de l'objet du localStorage qui répond à la condition avec celle de la page en cours et on renvoie le tout au localStorage
+        // If true, we add quantity of local storage objetc who meets the condition with the one of the page and returns whole to localstorage
 
         if (mappingProducts) {
 
