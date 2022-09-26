@@ -9,7 +9,7 @@ const recoverProducts = async function () {
             return (products = data);
         });
 };
-// Select element and display products //
+// Select elements and display products //
 const productElement = document.querySelector("#items");
 
 //Display products on the main page //
