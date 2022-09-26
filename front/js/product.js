@@ -123,7 +123,7 @@ function addToCart() {
 
     } else {
       alert(
-        "La quantité d'un même produit ne peux pas excéder 100, veuillez rectifier votre saisie"
+        "Veuillez rectifier la quantité ou indiquer une couleur"
       );
     }
   });
