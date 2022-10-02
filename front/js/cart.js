@@ -165,6 +165,7 @@ async function displayBasket() {
 displayBasket();
 
 // Storage of each item price depend to quantity and quantity storage //
+
 function evalTotal(Qty, Price) {
   let totalPrice = Qty * Price;
   sumPrice.push(totalPrice);
@@ -201,7 +202,6 @@ function changeTotal() {
     );
 
     // Input Listening //
-
     self.addEventListener("change", async function () {
       let changingProductid = target.dataset.id;
       let changingProductColor = target.dataset.color;
