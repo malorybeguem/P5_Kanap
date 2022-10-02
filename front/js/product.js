@@ -49,6 +49,7 @@ async function displayArticle(productId) {
 displayArticle(productId);
 
 function addToCart() {
+  
   //products setting choice //
 
   const addBtn = document.getElementById("addToCart");
