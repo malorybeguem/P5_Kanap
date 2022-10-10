@@ -61,6 +61,7 @@ function addToCart() {
   addBtn.addEventListener("click", () => {
     if (color.value !== "" && quantity.value != 0 && quantity.value <= 100) {
 
+      // FIELDS TO FILL //
       let userProductId = productId;
       let userProductColor = color.value;
       let userProductQty = quantity.value;
@@ -78,7 +79,7 @@ function addToCart() {
         localStorage.getItem("userProducts")
       );
 
-      // IF don't have local storage (NULL No value or type define) //
+      // IF Local Storage > (NULL No value or type define) //
 
       if (productLocalStorage == null) {
         productLocalStorage = [];
