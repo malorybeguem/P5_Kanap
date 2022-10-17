@@ -148,7 +148,7 @@ async function displayBasket() {
       evalTotal(userProductChoiceQuantity, userProductChoicePrice);
     }
   } else {
-   
+        // Message display if empty //
     const productCardEmpty = document.createElement("p");
     displayCard.appendChild(productCardEmpty);
     productCardEmpty.textContent = "Votre panier est vide";
