@@ -1,5 +1,16 @@
 {
+  "homepage": "https://malorybeguem.github.io/P5_Kanap/",
+  "name": "kanap",
+
   "dependencies": {
     "gh-pages": "^6.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 }
